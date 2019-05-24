@@ -1,0 +1,52 @@
+h1 { color: black;
+    width: 60%;
+    margin: 5% auto;}
+
+body { background: pink}
+
+body { color: rgb(192, 230, 255);
+}
+body > h1 {color: inherit}
+
+main {background-color: green;
+width: 60%;
+margin: 5% auto;
+}
+
+article { border: solid gray 2px !important;
+margin: 1%;}
+
+article:hover { background-color: gray;}
+
+article { border: none}
+
+/* CSS media query within a stylesheet */
+
+@media (min-width: 600px) {
+    .column {
+      color: blue;
+    }
+  }
+
+  /* Extra Small and up (Portrait Phones) */
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+
+}
+
