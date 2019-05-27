@@ -1,12 +1,51 @@
-body {
+ 
+ 
+ body{
+   width: 850px;
+   margin: 0 auto;
+ }
+ 
+ h1 { 
+  text-align: center;
+
+}
+
+main { 
+  background-image: url(./galaxy.jpg);
+  width: 850px;
+  height: 450px;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+
+section {
+display: flex;
+height: 324 px;
+flex-direction: row;
+justify-content: space-between;
+background-color: gray;
+}
+
+
+article { 
+  width: 270px;
+  height: 374px;
+  background-color: rgb(red, green, blue);
+
+}
+ 
+ 
+ /*body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(nasaLanding.jpg);
+    background-image: url(cosmic.jpg);
     background-repeat: no-repeat;
     background-size: 1350px;
-    height: 100vh auto;
-    width: 100vw auto;
+    height: 450px auto;
+    width: 850px auto;
   }
-  
+
   .logo {
     width: 30% auto;
     height: 150%;
