@@ -15,18 +15,26 @@ main {
   width: 850px;
   height: 450px;
   margin: 0 auto;
+  border: 10px;
   color: white;
   font-family: 'Anton', sans-serif;
+  white-space: normal;
 }
+
 
 
 section {
 display: flex;
-height: 324 px;
+height: 324px;
+width: 830px;
 flex-direction: row;
+margin: px;
+padding: 10px;
 justify-content: space-between;
 background-color: gray;
 }
+
+
 
 
 article { 
