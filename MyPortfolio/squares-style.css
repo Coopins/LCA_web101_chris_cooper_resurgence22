@@ -1,0 +1,44 @@
+.redsquare {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+    cursor: pointer;
+    transition: 5s;
+
+}
+
+.redsquare:hover {
+    transform: rotate(360deg)
+}
+
+.bluesquare {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: width 2s;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.bluesquare:hover {
+    transform: rotate(3600deg)
+}
+
+
+
+.greensquare {
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition: width 2s;
+}
+
+.orangesquare {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    transition: width 2s;
+}
+
+.
