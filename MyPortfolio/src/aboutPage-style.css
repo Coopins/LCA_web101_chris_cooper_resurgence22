@@ -32,12 +32,16 @@ dd { width: 600px; float: right; }
 
 dd.clear { float: none; margin: 0; height: 15px; }
 
-/* Small and up (Landscape Phones) */
-@media (min-width: 576px) {
-
-}
-
-/* Medium and up (Tablets) */
-@media (min-width: 768px) {
-
-}
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+  }
+  
+  @media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+  }
+  
+  @media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+  }
