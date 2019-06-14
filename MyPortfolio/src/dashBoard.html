@@ -11,6 +11,22 @@
             
  <div class="container">
     <header> <h1> Welcome to my Dashboard</h1></header>
+
+    <button onclick="getLocation()">Current Location</button>
+    <p id="my-coordinates"></p>
+    <script>
+     var myLocation = document.getElementById("my-coordinates");
+    function getLocation() {
+      if (navigator.geolocation) {
+         navigator.geolocation.getCurrentPosition(displayPosition);
+   } else {
+        myLocation.innerHTML = "Not Available";
+   } 
+}
+    function displayPosition(position) {
+    myLocation.innerHTML = "Longitude: " + position.coords.longitude + " Latitude: " + position.coords.latitude;
+}
+    </script>
     <nav>
       <ul>
           <li> <p> <a href=" https://codepen.io/liuyanghejerry/pen/IuCFo/">Clock</a> </p> </li>
@@ -19,24 +35,9 @@
         <li> <p> <a href="https://www.youtube.com/channel/UCdC0An4ZPNr_YiFiYoVbwaw/"> Your Daily Dose of the Internet</a> </p> </li>
         <li> <p> <a href="./images/wireFrame images/mobilewireframe.JPG"> Mobile wireframe image</a> </p> </li>
         <li> <p> <a href="./images/wireFrame images/tablet&desktop.jpg"> Tablet wireframe images</a> </p> </li>
-        <div>
-            <button onclick="getLocation()">Current Location</button>
-            <p id="my-coordinates"></p>
-            <script>
-             var myLocation = document.getElementById("my-coordinates");
-            function getLocation() {
-              if (navigator.geolocation) {
-                 navigator.geolocation.getCurrentPosition(displayPosition);
-           } else {
-                myLocation.innerHTML = "Not Available";
-           } 
-        }
-            function displayPosition(position) {
-            myLocation.innerHTML = "Longitude: " + position.coords.longitude + " Latitude: " + position.coords.latitude;
-        }
-            </script>
-          </div>
+        
       </ul>
+      
     </nav>
     <main>
       <div class="clock">
