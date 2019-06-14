@@ -19,6 +19,23 @@
         <li> <p> <a href="https://www.youtube.com/channel/UCdC0An4ZPNr_YiFiYoVbwaw/"> Your Daily Dose of the Internet</a> </p> </li>
         <li> <p> <a href="./images/wireFrame images/mobilewireframe.JPG"> Mobile wireframe image</a> </p> </li>
         <li> <p> <a href="./images/wireFrame images/tablet&desktop.jpg"> Tablet wireframe images</a> </p> </li>
+        <div>
+            <button onclick="getLocation()">Current Location</button>
+            <p id="my-coordinates"></p>
+            <script>
+             var myLocation = document.getElementById("my-coordinates");
+            function getLocation() {
+              if (navigator.geolocation) {
+                 navigator.geolocation.getCurrentPosition(displayPosition);
+           } else {
+                myLocation.innerHTML = "Not Available";
+           } 
+        }
+            function displayPosition(position) {
+            myLocation.innerHTML = "Longitude: " + position.coords.longitude + " Latitude: " + position.coords.latitude;
+        }
+            </script>
+          </div>
       </ul>
     </nav>
     <main>
@@ -63,6 +80,8 @@
     <script>
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     </script></div>
+
+    
 
     <footer>
       <div class="month">      
