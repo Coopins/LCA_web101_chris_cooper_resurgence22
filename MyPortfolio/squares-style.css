@@ -7,7 +7,7 @@ div  {
 }
 
 
-.boxone{
+.one{
     border-style: solid;
     border-width: 1px;
     display: block;
@@ -18,17 +18,20 @@ div  {
     transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
-.boxone:hover {
+.one:hover {
     background-color: #FFCCCC;
     width: 200px;
     height: 200px;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+    animation: large 5s ease-in-out .2s 1 forwards;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
 }
 
 
 
-.boxtwo {
+.two {
     width: 50px;
     height: 50px;
     background: blue;
@@ -37,7 +40,7 @@ div  {
     transition: 1s;
 }
 
-.boxtwo:hover {
+.two:hover {
     width: 30px;
     height: 30px;
     -webkit-transform: rotate(180deg);
@@ -46,7 +49,7 @@ div  {
 
 
 
-.boxthree {
+.three {
     width: 50px;
     height: 50px;
     background: green;
@@ -55,14 +58,14 @@ div  {
     transition: 1s;
 }
 
-.boxthree:hover {
+.three:hover {
     width: 200px;
     height: 200px;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
-.boxfour {
+.four {
     width: 50px;
     height: 50px;
     background:orange;
@@ -71,7 +74,7 @@ div  {
     transition: 1s;
 }
 
-.boxfour:hover {
+.four:hover {
     width: 30px;
     height: 30px;
     -webkit-transform: rotate(180deg);
@@ -79,7 +82,7 @@ div  {
 }
 
 
-.boxfive {
+.five {
     width: 50px;
     height: 50px;
     background: aqua;
@@ -88,14 +91,14 @@ div  {
     transition: 1s;
 }
 
-.boxfive:hover {
+.five:hover {
     width: 200px;
     height: 200px;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
-.boxsix {
+.six {
     width: 50px;
     height: 50px;
     background: blueviolet;
@@ -104,7 +107,7 @@ div  {
     transition: 1s;
 }
 
-.boxsix:hover {
+.six:hover {
     width: 30px;
     height: 30px;
     -webkit-transform: rotate(180deg);
@@ -112,7 +115,7 @@ div  {
 }
 
 
-.boxseven {
+.seven {
     width: 50px;
     height: 50px;
     background: brown;
@@ -121,7 +124,7 @@ div  {
     transition: 1s;
 }
 
-.boxseven:hover {
+.seven:hover {
     width: 200px;
     height: 200px;
     -webkit-transform: rotate(180deg);
@@ -129,7 +132,7 @@ div  {
 }
 
 
-.boxeight {
+.eight {
     width: 50px;
     height: 50px;
     background:chartreuse;
@@ -138,14 +141,14 @@ div  {
     transition: 1s;
 }
 
-.boxeight:hover {
+.eight:hover {
     width: 30px;
     height: 30px;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
-.boxnine {
+.nine {
     width: 50px;
     height: 50px;
     background:  crimson;
@@ -154,14 +157,14 @@ div  {
     transition: 1s;
 }
 
-.boxnine:hover {
+.nine:hover {
     width: 200px;
     height: 200px;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
-.boxten {
+.ten {
     width: 50px;
     height: 50px;
     background: coral;
@@ -170,14 +173,14 @@ div  {
     transition: 1s;
 }
 
-.boxten:hover {
+.ten:hover {
     width: 30px;
     height: 30px;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
-.boxeleven {
+.eleven {
     width: 50px;
     height: 50px;
     background: fuchsia;
@@ -186,14 +189,15 @@ div  {
     transition: 1s;
 }
 
-.boxeleven:hover{
+.eleven:hover{
     width: 200px;
     height: 200px;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+    animation-play-state: running;
 }
 
-.boxtwelve {
+.twelve {
     width: 50px;
     height: 50px;
     background: gold;
@@ -202,7 +206,7 @@ div  {
     transition: 1s;
 }
 
-.boxtwelve:hover {
+.twelve:hover {
     width: 30px;
     height: 30px;
     -webkit-transform: rotate(180deg);
@@ -210,4 +214,64 @@ div  {
     
 }
 
+.sqr {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    position: relative;
+}
 
+.large { 
+    animation: large 5s ease-in-out .2s 1 forwards;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+
+.go:hover .large { 
+    animation-play-state: running;
+
+}
+
+
+@keyframes large {
+    0% {
+        left:0px; top:0px;
+        transform: rotate(0deg) scale(1); 
+    }
+    20% {
+        left:0px; top:0px;
+        transform: rotate(0deg) scale(2); 
+    }
+    100% {
+        left:500px; top:0px;
+        transform: rotate(360deg) scale(2); 
+    }
+}
+
+
+.small { 
+    animation: small 3s ease-in-out .2s 1 forwards;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+
+.go:hover .small { 
+    animation-play-state: running;
+}
+
+/* name duration timing delay count direction */
+
+@keyframes small {
+    0% {
+        left:0px; top:0px;
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        left:0px; top:0px;
+        transform: rotate(0deg) scale(.5); 
+    }
+    100% {
+        left:-500px; top:0px;
+        transform: rotate(-360deg) scale(.5); 
+    }
+}
