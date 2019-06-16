@@ -92,6 +92,7 @@ body {
     color: #4caf50;
     letter-spacing: 16px;
     font-style: italic;
+    cursor: pointer;
   }
 
   div { box-align: center;}
