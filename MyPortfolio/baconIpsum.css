@@ -19,7 +19,20 @@ body { color: #666666;
         
         header {
             height: 160px;
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 99;
+            background-color: transparent;
+            padding: 40px 0;
+            transition: 0.3s;
             
+        }
+
+        .four {
+            font-family: 'Lobster', cursive;
+            color: chartreuse;
         }
 
         .logo {
@@ -138,6 +151,22 @@ body { color: #666666;
             font-size: 80%;
             padding: 7px 0px 0px 20px;
         }
+
+        .one{
+            height: 232px;
+            width: 302px;
+
+        }
+
+        .two {
+            color: crimson;
+        }
+
+        
+.three {
+    color: red;
+}
+
 
           /* Add media queries for smaller screens */
     @media screen and (max-width:720px) {
